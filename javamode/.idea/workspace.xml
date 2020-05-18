@@ -10,14 +10,9 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="javamode" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -33,29 +28,21 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jedis-3.2.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\aiproject\nocenterproject\javamode\lib" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.BoardRun">
-    <configuration name="AreaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.AreaTest" />
+  <component name="RunManager" selected="Application.Gobang">
+    <configuration name="Gobang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Gobang" />
       <module name="javamode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.chessboard.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +50,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.chessboard.BoardRun" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Dijitian" />
+      <module name="javamode" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arrayadd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.arrayadd" />
       <module name="javamode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.chessboard.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Db" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Db" />
+    <configuration name="doublecolorball" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.doublecolorball" />
       <module name="javamode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,25 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.PersonTest" />
+    <configuration name="perfectnumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.perfectnumber" />
       <module name="javamode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.chessboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhoneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.phone.PhoneTest" />
-      <module name="javamode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.chessboard.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BoardRun" />
-        <item itemvalue="Application.PhoneTest" />
-        <item itemvalue="Application.Db" />
-        <item itemvalue="Application.AreaTest" />
-        <item itemvalue="Application.PersonTest" />
+        <item itemvalue="Application.Gobang" />
+        <item itemvalue="Application.arrayadd" />
+        <item itemvalue="Application.doublecolorball" />
+        <item itemvalue="Application.perfectnumber" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -141,18 +125,7 @@
       <workItem from="1588259046745" duration="80000" />
       <workItem from="1588420908017" duration="16390000" />
       <workItem from="1588516766637" duration="3421000" />
-      <workItem from="1588567882808" duration="29445000" />
-      <workItem from="1588652652586" duration="3225000" />
-      <workItem from="1588770263897" duration="4462000" />
-      <workItem from="1588815218434" duration="14315000" />
-      <workItem from="1589011208815" duration="2407000" />
-      <workItem from="1589164974095" duration="22209000" />
-      <workItem from="1589271395146" duration="7918000" />
-      <workItem from="1589340230632" duration="2406000" />
-      <workItem from="1589531336561" duration="985000" />
-      <workItem from="1589607199155" duration="30945000" />
-      <workItem from="1589701611249" duration="13973000" />
-      <workItem from="1589765355765" duration="35820000" />
+      <workItem from="1588567882808" duration="27243000" />
     </task>
     <servers />
   </component>
@@ -160,77 +133,53 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="730" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1589807418576">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1588002047987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="730" y="136" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589807418576" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1589713346592">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588002047987" />
+    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1588596260264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589713346592" />
-    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1589816379004">
+    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588596260264" />
+    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1588596260264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589816379004" />
-    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1589816379004">
+    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588596260264" />
+    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1588596260264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589816379004" />
-    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1589816379004">
+    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588596260264" />
+    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1588596260264">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589816379004" />
-    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1589816379004">
+    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588596260264" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588594624187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589816379004" />
-    <state width="746" height="261" key="GridCell.Tab.1.bottom" timestamp="1589811418155">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588594624187" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1588594624187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589811418155" />
-    <state width="746" height="261" key="GridCell.Tab.1.center" timestamp="1589811418155">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588594624187" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1588594624187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589811418155" />
-    <state width="746" height="261" key="GridCell.Tab.1.left" timestamp="1589811418154">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588594624187" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1588594624187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589811418154" />
-    <state width="746" height="261" key="GridCell.Tab.1.right" timestamp="1589811418155">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588594624187" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1588567972228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589811418155" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1589713395284">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589713395284" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1589765419737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589765419737" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588567972228" />
     <state x="415" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588595682821">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="415" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1588595682821" />
-    <state x="323" y="151" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589811241653">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588568609462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="323" y="151" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1589811241653" />
-    <state x="178" y="28" key="new project wizard" timestamp="1588856571306">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="178" y="28" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1588856571306" />
-    <state x="511" y="35" key="refactoring.ChangeSignatureDialog" timestamp="1589800151035">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="511" y="35" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1589800151035" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1589634673681">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1589634673681" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589613844713">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589613844713" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588568609462" />
   </component>
 </project>
