@@ -5,7 +5,7 @@ import com.company.phone.*;
 import java.util.Random;
 import java.util.Scanner;
 
-public class UserCostInfor {
+public class UserCostInfor extends Calculate{
       private int cellMinute;
       private int  myNetFlow;
       private int  eachMonthCost;
@@ -116,5 +116,16 @@ public class UserCostInfor {
         new CellServiceImpl().myCellMeal();
         new NetServiceImpl().myNetMeal();
     }
+    @Override
+    public int cal() {
+        if (cpc.getAccountLeftMoney()-count!= 0) {
+            return cpc.getAccountLeftMoney()-count;
+        } else if (cpc.getAccountLeftMoney()-count== 0) {
+            return 0;
+        } else {
+            return 0;
+        }
+     }
+    }
 
-}
+

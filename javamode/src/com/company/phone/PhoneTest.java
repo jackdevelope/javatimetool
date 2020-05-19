@@ -6,6 +6,7 @@ public class PhoneTest {
         uct.userShow();
         uct.showAll();
         uct.eachMonthCost();
+        System.out.println("你的剩余金额为:"+uct.cal());
 
     }
 }

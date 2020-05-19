@@ -61,21 +61,15 @@ public class CellPhoneCard {
     }
 
     public void setAccountLeftMoney(int accountLeftMoney) {
-        if (accountLeftMoney- UserCostInfor.count!=0){
-        this.accountLeftMoney = accountLeftMoney-UserCostInfor.count;}
-        else if (accountLeftMoney-UserCostInfor.count==0){
-            this.accountLeftMoney=0;}
-        else{
-            this.accountLeftMoney=0;}
-    }
 
+            this.accountLeftMoney=accountLeftMoney;
+    }
     public int getCellMinute() {
         return cellMinute;
     }
     public void setCellMinute() {
-        Date todaytime=new Date();
         Calendar calendar = Calendar.getInstance();
-        calendar.setTime(todaytime);
+        calendar.setTime(new Date());
         this.cellMinute=calendar.get(Calendar.MINUTE);
     }
     public int getNetDataAmounts() {
@@ -90,7 +84,7 @@ public class CellPhoneCard {
         StringBuffer gb=new StringBuffer();
         String result0="cardid:"+getCardId()+',';
         String result1="username:"+getUserName()+',';
-        String result2="accountleftmoney:"+getAccountLeftMoney();
+        String result2="accountCurrentmoney:"+getAccountLeftMoney();
         gb.append(result0);
         gb.append(result1);
         gb.append(result2);
