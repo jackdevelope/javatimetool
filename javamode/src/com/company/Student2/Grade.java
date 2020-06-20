@@ -2,7 +2,7 @@ package com.Student1;
 
 import java.util.Objects;
 
-public class Grade {
+public class Grade implements Serializable{
     private String stdId;
     private String grade;
     public String getStdId() {
