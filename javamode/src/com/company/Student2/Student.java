@@ -1,6 +1,8 @@
 package com.Student1;
 
-public class Student implements Serializable{
+import java.io.Serializable;
+
+public class Student implements Serializable {
     private String name;
     private String stdId;
     private String pass;

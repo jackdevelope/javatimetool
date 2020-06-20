@@ -18,6 +18,7 @@ public class StudentMessage {
     public static void main(String[] args) {
         ArrayList<Student> arry = new ArrayList<>();
         ArrayList<Grade> arry0 = new ArrayList<>();
+        ArrayList<Text> arry1= new ArrayList<>();
         while(true) {
             //这是成绩管理系统的主界面
             System.out.println("------学生管理系统------");
@@ -41,7 +42,7 @@ public class StudentMessage {
                     break;
                 case "3":
                     //开始考试
-                    beginText(arry,arry0);
+                    beginText(arry,arry0,arry1);
                     break;
                 case "4":
                     //查询成绩
@@ -148,10 +149,11 @@ public class StudentMessage {
         }
     }
     //开始考试
-    public static void beginText(ArrayList<Student> arry,ArrayList<Grade> arry0) {
-        int index=-1;
-        int temp=0;
-        Grade grade=new Grade();
+    public static void beginText(ArrayList<Student> arry,ArrayList<Grade> arry0, ArrayList<Text> arry1) {
+        try {
+            int index=-1;
+            int temp=0;
+            Grade grade=new Grade();
             System.out.println("请输入学号：");
             Scanner sc= new Scanner(System.in);
             String id= sc.nextLine();
@@ -165,13 +167,36 @@ public class StudentMessage {
             if (index==-1&&temp==0) {
                 System.out.println("该学生无法参加考试，不存在");
             } else {
-                String string=arry.get(temp).toString();
-                Random random=new Random(100);
-                int i=random.nextInt(100);
-                grade.setStdId(Integer.toString(index));
-                grade.setGrade(Integer.toString(i));
+                String string=arry.get(temp).getName();
+                Text text=new Text();
+                text.setTextid();
+                text.setTextoption();
+                text.setAnswer();
+                System.out.println(text.toString());
+                System.out.println("请输入你的答案:");
+                String answer=sc.nextLine();
+                text.setYouranswer(answer);
+                arry1.add(text);
+                    //1.创建socker类型对象并提供服务器的主机名和端口号
+                   Socket socket = new Socket("127.0.0.1",8181);
+                //2. //2.使用输入输出流进行通信
+                //构建输入流进行读取
+                ObjectOutputStream objectOutputStream= new ObjectOutputStream(socket.getOutputStream());
+                //发送
+                objectOutputStream.writeObject(arry1);
+                System.out.println("客户端发送内容成功!!!!");
+                //3.创建输入流以读取字符串
+                BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                String s=bufferedReader.readLine();
+                grade.setStdId(Integer.toString(temp));
+                grade.setName(string);
+                grade.setGrade(s);
                 arry0.add(grade);
+
            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     //查询学生信息及成绩成绩
         public static void select(ArrayList<Student> arry, ArrayList<Grade> arry0) {
@@ -211,7 +236,7 @@ public class StudentMessage {
             BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
             //4.读取
             String s=bufferedReader.readLine();
-            System.out.println("接收到的内容为:"+s);
+            System.out.println(s);
             if (s.contains("success")){
                 System.out.println("成绩导出完毕");
             }else{
