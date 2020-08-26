@@ -1,0 +1,173 @@
+<html>
+<head>
+    <title>mymain</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <title>员工列表页面</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+     function creatinfor() {
+      var option = document.createElement("input");
+      option.type="checkbox";
+      option.value="option5";
+      var sid = document.getElementById("sid").value;
+      var name = document.getElementById("name").value;
+      var sex = document.getElementById("sex").value;
+      var password = document.getElementById("password").value;
+      var old = document.getElementById("old").value;
+      var birthday = document.getElementById("birthday").value;
+      //console.log(sid,name,sex,password,old,birthday)
+      var tr=$("<tr></tr>");
+      var option= $("<td></td>").append(option);
+      var sid= $("<td></td>").text(sid);
+      var name=$("<td></td>").text(name);
+      var sex=$("<td></td>").text(sex);
+      var password=$("<td></td>").text(password);
+      var old=$("<td></td>").text(old);
+      var birthday=$("<td></td>").text(birthday);
+      $("#tbmain").append(tr,option,sid,name,sex,password,old,birthday);
+     }
+     function del(){
+         var obj = document.getElementsByTagName("input");
+         for(var i=0; i<obj.length;i++){
+             if(obj[i].checked){
+               var pare=obj[i].parentNode.parentNode;
+               pare.remove();
+             }
+         }
+     }
+     $(document).ready(function(){
+         $("#shai").keyup(function(){
+             $("table tbody tr").hide().filter(":contains('"+($(this).val())+"')").show();
+         });keyup();//这句一定要有。
+     })
+     function alt() {
+
+     }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div>
+                <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#infor">新增按钮</button>
+                <button type="submit" class="btn btn-info" onclick="del()">删除按钮</button>
+                <button type="submit" class="btn btn-info" onclick="alt()">编辑按钮</button>
+                <button  type="submit"  class="btn btn-info" onclick="sel()">查询按钮</button>
+            <input id="shai" align="right" type="text" class="form-control-static" placeholder="Search">
+        </div>
+    </div>
+</nav>
+<main>
+    <table id="result" class="table" align="center">
+        <caption align="center"><center>员工列表</center></caption>
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>工号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>密码</th>
+            <th>年龄</th>
+            <th>出生日期</th>
+        </tr>
+        </thead>
+        <tbody id="tbmain">
+        <tr  class="info">
+            <td>
+            <input id="one" type="checkbox"  value="option1" >
+			</td>
+            <td>1001&nbsp;</td>
+            <td>张三&nbsp;</td>
+			 <td>女&nbsp;</td>
+            <td>1234&nbsp;</td>
+            <td>29&nbsp;</td>
+			 <td>1991-1-1</td>
+		</tr>
+        <tr class="warning">
+            <td>
+             <input id="two"  type="checkbox"  value="option2" >
+			</td>
+            <td>1002&nbsp;</td>
+            <td>李四&nbsp;</td>
+			 <td>男&nbsp;</td>
+            <td>1234</td>
+            <td>28&nbsp;</td>
+			 <td>1992-2-2</td>
+		</tr>
+		<tr class="info">
+            <td>
+            <input id="three" type="checkbox"  value="option3" >
+			</td>
+            <td>1003&nbsp;</td>
+            <td>王五&nbsp;</td>
+			 <td>&nbsp;女</td>
+            <td>1234</td>
+            <td>27</td>
+			 <td>1993-3-3</td>
+		</tr>
+        <tr class="warning">
+           <td>
+           <input id="four" type="checkbox"  value="option4" >
+			</td>
+            <td>1004&nbsp;</td>
+            <td>赵六&nbsp;</td>
+			 <td>女&nbsp;</td>
+            <td>1234</td>
+            <td>26</td>
+			 <td>1994-4-4</td>
+		</tr>
+        </tbody>
+    </table>
+</main>
+<!--声明增加功能模态框组件-->
+<div class="modal" id="infor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">编辑</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>工号</label>
+                    <input type="text" name="sid" id="sid" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>姓名</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>性别</label>
+                    <input type="text" name="sex" id="sex" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">年龄</label>
+                    <input type="text" name="old" id="old" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">出生日期</label>
+                    <input type="date" name="birthday" id="birthday" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="" aria-hidden="true"></span>关闭</button>
+                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal" onclick="creatinfor()"><span class="" aria-hidden="true"></span>保存</button>
+            </div>
+            <!--附加信息-->
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
